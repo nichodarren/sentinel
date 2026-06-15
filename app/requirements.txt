@@ -1,0 +1,12 @@
+# SENTINEL deployment app - pinned to the versions the research engine was validated against.
+# Faithfulness (app output == notebook output) depends on the scikit-learn / LightGBM behaviour,
+# so these are pinned rather than left open.
+streamlit==1.55.0
+pandas==2.2.3
+numpy==2.2.1
+scikit-learn==1.6.1
+lightgbm==4.6.0
+shap==0.48.0
+joblib==1.4.2
+# Needed only for the in-session retrain fallback (when model.joblib is absent).
+iterative-stratification==0.1.9

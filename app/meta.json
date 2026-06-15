@@ -1,0 +1,23 @@
+{
+  "built_at": "2026-06-16T02:17:01",
+  "seed": 42,
+  "n_patients": 299,
+  "n_deploy_features": 75,
+  "n_questions": 12,
+  "recall_nmd_br": 0.4286,
+  "recall_nmd_ecc": 0.3571,
+  "coverage_malaria": 0.9242,
+  "coverage_dengue": 0.8889,
+  "referral_caught": 24,
+  "referral_dengue_n": 27,
+  "naive_caught": 8,
+  "next_test": "wbc",
+  "qhat": {
+    "malaria": 0.367813,
+    "dengue": 0.988992,
+    "typhoid": null,
+    "yellow_fever": null
+  },
+  "ecc_refactor_max_abs_diff": 0.0,
+  "python": "3.13.1"
+}

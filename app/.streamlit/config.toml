@@ -1,0 +1,11 @@
+# SENTINEL app theme: a clean clinical look matching the research notebook / report palette.
+[theme]
+primaryColor = "#b23a48"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f7f9fb"
+textColor = "#1a1a1a"
+font = "sans serif"
+
+[server]
+# The model is loaded once and cached; uploads are not used.
+maxUploadSize = 5
