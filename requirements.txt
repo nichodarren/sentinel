@@ -1,0 +1,25 @@
+# SENTINEL - FIT Competition 2026, Track IV
+# Pinned to the environment in which notebook.ipynb was executed (Python 3.13).
+# Install with:  pip install -r requirements.txt
+
+# Core data / numerics
+pandas==2.2.3
+numpy==2.2.1
+scipy==1.15.2
+
+# Modeling
+scikit-learn==1.6.1
+lightgbm==4.6.0
+iterative-stratification==0.1.9   # provides `iterstrat` (MultilabelStratifiedKFold)
+statsmodels==0.14.6
+
+# Visualization
+matplotlib==3.10.0
+plotly==6.8.0
+kaleido==1.3.0                     # required by Plotly write_image (static PNG fallback)
+networkx==3.5
+
+# Notebook execution
+ipython==8.31.0
+nbformat==5.10.4
+notebook==7.3.2

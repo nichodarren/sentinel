@@ -1,0 +1,15 @@
+# Normalize text line endings across machines; leave binary/data files untouched.
+* text=auto
+
+*.py   text eol=lf
+*.md   text eol=lf
+*.txt  text eol=lf
+
+# Treat data, notebooks, and documents as binary (no EOL conversion, no diff noise).
+*.ipynb  -text
+*.csv    -text
+*.parquet binary
+*.xlsx   binary
+*.pdf    binary
+*.png    binary
+*.dta    binary
