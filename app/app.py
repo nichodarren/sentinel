@@ -41,7 +41,8 @@ BAR_COLOR = {"malaria": "#d1495b", "dengue": "#3a6ea5", "typhoid": "#2e8b57", "y
 TEXT = {
     "en": {
         "tagline": "Uncertainty-aware triage and referral assistant for co-circulating "
-                   "vector-borne febrile disease",
+                   "vector-borne febrile disease, built for the surge that follows floods and "
+                   "other disasters, when confirmatory testing is scarcest.",
         "disclaimer": "NOT FOR CLINICAL USE - research proof of concept, single-region cohort "
                       "(N=299). It supports the prioritisation of scarce confirmatory testing; "
                       "it does not diagnose and does not replace clinical judgement.",
@@ -129,7 +130,9 @@ TEXT = {
     },
     "fr": {
         "tagline": "Assistant de triage et d'orientation tenant compte de l'incertitude pour les "
-                   "maladies febriles a transmission vectorielle co-circulantes",
+                   "maladies febriles a transmission vectorielle co-circulantes, concu pour la "
+                   "vague qui suit les inondations et autres catastrophes, quand les tests de "
+                   "confirmation sont les plus rares.",
         "disclaimer": "NE PAS UTILISER EN CLINIQUE - preuve de concept de recherche, cohorte d'une "
                       "seule region (N=299). L'outil aide a prioriser les tests de confirmation "
                       "rares ; il ne pose pas de diagnostic et ne remplace pas le jugement clinique.",
