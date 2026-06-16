@@ -43,7 +43,7 @@ as 0–5.5% in comparable cohorts). SENTINEL reframes the task:
 | [`notebook.ipynb`](notebook.ipynb) | **The primary deliverable.** A single self-contained CRISP-DM notebook (162 cells, executes top to bottom with 0 errors, deterministic). |
 | [`app/`](app/) | The **deployed Streamlit triage app** — a standalone service that wraps a frozen copy of the notebook's engine. See [`app/README.md`](app/README.md). |
 | [`data.csv`](data.csv) | Primary cohort: Burkina Faso, 300 × 109 (Ouedraogo et al., 2025). |
-| [`external_data/`](external_data/) | Supplementary cohorts used for independent reproduction and cross-cohort convergence only — never merged into training. Provenance in [`external_data/EXTERNAL_DATA_GUIDE.md`](external_data/EXTERNAL_DATA_GUIDE.md). |
+| [`external_data/`](external_data/) | Two supplementary cohorts (Kenya and Tanzania) used for independent reproduction and cross-cohort convergence only — never merged into training. |
 | [`requirements.txt`](requirements.txt) | Pinned dependencies for the environment the notebook was validated on (Python 3.13). |
 
 The notebook is organised explicitly around the six **CRISP-DM** phases:
@@ -102,12 +102,16 @@ twenty minutes, the NSGA-II search in §5 being the bulk of it.
 
 - **Primary cohort** (`data.csv`): Ouedraogo et al. (2025), Mendeley Data `cf49v47z4c`, Burkina Faso,
   **CC BY 4.0**.
-- **External cohorts** (`external_data/`): all open-access and CC-licensed, used **only** for
-  independent reproduction and cross-cohort convergence. External rows are **never** merged into model
-  training, conformal calibration, or the fairness audit. The Kenya CSV is redistributed here for
-  reproducibility; each file's upstream source, license, and acquisition command are recorded in
-  [`external_data/EXTERNAL_DATA_GUIDE.md`](external_data/EXTERNAL_DATA_GUIDE.md) and cited in the
-  notebook bibliography.
+- **External cohorts** (`external_data/`): both open-access and used **only** for independent
+  reproduction and cross-cohort convergence. External rows are **never** merged into model training,
+  conformal calibration, or the fairness audit. Each is cited in the notebook bibliography.
+  - *Kenya* — "Western and coastal Kenya sick visit data 2019-2022", Dryad
+    [`10.5061/dryad.w9ghx3fxc`](https://doi.org/10.5061/dryad.w9ghx3fxc). Redistributed here for
+    reproducibility; the upstream data dictionary, license, and IRB statement are preserved in the
+    folder's own `README.md`.
+  - *Tanzania* — pediatric fever study database, Zenodo
+    [`10.5281/zenodo.166713`](https://doi.org/10.5281/zenodo.166713) (CC BY 4.0), converted to a
+    portable parquet copy.
 
 ---
 
