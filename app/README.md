@@ -1,5 +1,7 @@
 # SENTINEL - triage prototype (deployment app)
 
+🚀 **Live: [sentinel-fit.streamlit.app](https://sentinel-fit.streamlit.app)**
+
 An uncertainty-aware **triage and referral assistant** for co-circulating vector-borne febrile
 disease (malaria, dengue, typhoid, yellow fever), wrapping the research engine from the SENTINEL
 notebook in a live Streamlit interface. It is the deployed (tier-one) successor to the inline
@@ -61,7 +63,10 @@ run otherwise. `data.csv` must sit at the repository root (one level above this 
 
 ## Deploy to Streamlit Community Cloud
 
-1. Push the repository to GitHub (it already lives there).
+This app is already deployed at **[sentinel-fit.streamlit.app](https://sentinel-fit.streamlit.app)**.
+To stand up your own instance:
+
+1. Fork or push this repository to GitHub.
 2. On https://share.streamlit.io create a new app pointing at **`app/app.py`** on the `main` branch.
 3. Streamlit Cloud installs `app/requirements.txt` automatically. Because `model.joblib` is
    committed, the app starts immediately without retraining.

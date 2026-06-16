@@ -18,13 +18,22 @@ desktop.ini
 .idea/
 
 # --- Local working/scratch (not part of the deliverable) ---
-# Build scratch, scratch notebooks, and any local archive live OUTSIDE this repo (in d:/tmp),
+# Build scratch, scratch notebooks, and any local archive live OUTSIDE this repo,
 # but guard against accidental copies landing here:
 _archive*/
 *_backup.ipynb
 scratch/
 tmp/
 
-# NOTE: eda_figs/ IS tracked on purpose. It holds the four interactive-figure PNG
-# fallbacks that notebook.ipynb exports (the matplotlib panels render inline in the
-# .ipynb itself). They are regenerated on every full execution.
+# --- Generated / regenerated on run (not committed) ---
+# eda_figs/ holds PNG fallbacks for the interactive figures. The matplotlib panels
+# render inline in notebook.ipynb itself, and the notebook recreates this folder
+# (os.makedirs(..., exist_ok=True)) on every execution, so it is not tracked.
+eda_figs/
+
+# Intermediate model/search caches and any persisted parquet artefacts. The notebook
+# is self-contained and rebuilds everything in-process; nothing here needs committing.
+artifacts/
+
+# The internal build script and process documentation are kept out of the public repo.
+build/
