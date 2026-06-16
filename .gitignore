@@ -37,3 +37,10 @@ artifacts/
 
 # The internal build script and process documentation are kept out of the public repo.
 build/
+
+# Process / reference documents kept locally only (not part of the standalone project).
+CLAUDE.md
+PLAN.md
+Dataset.pdf
+GuideBook.pdf
+desciption.xlsx
